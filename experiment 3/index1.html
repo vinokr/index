@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblogging App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Microblogging App</h1>
+            <nav>
+                <button id="showPosts">View Posts</button>
+                <button id="showFollowers">Manage Followers</button>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="postSection">
+                <h2>Post a New Message</h2>
+                <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+                <button id="postButton">Post</button>
+            </section>
+            
+            <section id="followerSection" style="display: none;">
+                <h2>Manage Followers</h2>
+                <input type="text" id="followerName" placeholder="Add follower username">
+                <button id="addFollowerButton">Add Follower</button>
+                <ul id="followerList"></ul>
+            </section>
+            
+            <section id="feedSection" style="display: none;">
+                <h2>Your Feed</h2>
+                <ul id="feedList"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
