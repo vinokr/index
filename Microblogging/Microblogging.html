@@ -166,8 +166,6 @@
     const postList = document.getElementById('post-list');
     const logoutButton = document.getElementById('logout-btn');
     let currentUser = null;
-
-    // Event listener for login button 
     loginButton.addEventListener('click', () => {
       const username = usernameInput.value.trim();
       const password = passwordInput.value.trim();
@@ -180,14 +178,10 @@
         loadPosts();
       }
     });
-
-    // Character count
     postContent.addEventListener('input', () => {
       const remaining = 280 - postContent.value.length;
       document.getElementById('char-count').textContent = `${remaining} characters remaining`;
     });
-
-    // Event listener for post button 
     postButton.addEventListener('click', () => {
       const content = postContent.value.trim();
       if (content !== '') {
@@ -196,29 +190,23 @@
           content: content,
           likes: 0,
           dislikes: 0,
-          timestamp: new Date().toLocaleString() // Formats date and time
+          timestamp: new Date().toLocaleString()
         };
         savePost(post); 
         postContent.value = '';
         loadPosts();
       }
     });
-
-    // Event listener for logout button
     logoutButton.addEventListener('click', () => {
       currentUser = null;
       loginForm.style.display = 'block';
       userDashboard.style.display = 'none';
     });
-
-    // Save post to local storage
     function savePost(post) {
       let posts = JSON.parse(localStorage.getItem('posts')) || [];
       posts.push(post);
       localStorage.setItem('posts', JSON.stringify(posts));
     }
-
-    // Load posts from local storage
     function loadPosts() {
       postList.innerHTML = '';
       const posts = JSON.parse(localStorage.getItem('posts')) || [];
@@ -238,8 +226,6 @@
         `;
         postList.appendChild(postItem);
       });
-
-      // Attach event listeners to buttons
       attachButtonListeners();
     }
 
@@ -272,41 +258,31 @@
         });
       });
     }
-
-    // Increment likes count for a post
     function likePost(index) {
       let posts = JSON.parse(localStorage.getItem('posts')) || [];
       posts[index].likes = (posts[index].likes || 0) + 1;
       localStorage.setItem('posts', JSON.stringify(posts));
       loadPosts();
     }
-
-    // Increment dislikes count for a post
     function dislikePost(index) {
       let posts = JSON.parse(localStorage.getItem('posts')) || [];
       posts[index].dislikes = (posts[index].dislikes || 0) + 1;
       localStorage.setItem('posts', JSON.stringify(posts));
       loadPosts();
     }
-
-    // Edit a post
     function editPost(index) {
       const posts = JSON.parse(localStorage.getItem('posts'));
       postContent.value = posts[index].content;
-      posts.splice(index, 1); // Remove the post to be edited
+      posts.splice(index, 1); 
       localStorage.setItem('posts', JSON.stringify(posts));
-      loadPosts(); // Reload posts to reflect changes
+      loadPosts(); 
     }
-
-    // Delete a post
     function deletePost(index) {
       let posts = JSON.parse(localStorage.getItem('posts'));
-      posts.splice(index, 1); // Remove post
+      posts.splice(index, 1); 
       localStorage.setItem('posts', JSON.stringify(posts));
-      loadPosts(); // Refresh post list
+      loadPosts(); 
     }
-
-    // Initial setup
     if (localStorage.getItem('posts') === null) {
       localStorage.setItem('posts', JSON.stringify([]));
     }
