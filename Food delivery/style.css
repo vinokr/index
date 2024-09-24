@@ -1,0 +1,115 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#fdb095;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#210341;
+    font-family:Arial black,gadget,sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    color:white;
+}
+h1{
+    color:white;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+div{
+    width:40%;
+    background-color:#210341;
+    border:20px solid white;
+    padding: 50px;
+    margin: 50px;
+    border-color: aliceblue;
+
+}
+main {
+    display:flex;
+    justify-content:center;
+    padding: 10px;
+    border:black;
+}
+
+#menu {
+    width:60%;
+}
+
+.dish {
+    background-color:5;;
+    color:white;
+    margin: 10px;
+    padding: 10px;
+    border:2px black;
+    border-radius: 8px;
+    box-sizing:border-box;
+    border-color:black;
+    text-align: center;
+    -webkit-box-align: start;
+}
+
+.dish img {
+    width: 150px;
+    height: 150px;
+    object-fit:contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1a1a;
+}
+#cart{
+    width:20%;
+    height:30%;
+    border:5px solid #fdb095;
+    background-color:#210341;
+    padding:50px;
+    margin:20px;
+    color:#ffffff;
+    border-radius: 10px;
+}
+#cartItems {
+    list-style-type:disc;
+    padding: 2px;
+}
+
+#cartItems li {
+    margin-bottom: 10px;
+}
+
+#orderConfirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: none;
+}
+
+#orderConfirmation img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
