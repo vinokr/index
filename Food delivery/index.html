@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS Files-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+</head>
+
+<body>
+    <!-- Start Wrapper -->
+    <div id="wrapper">
+        <!-- Start Navigation Menu -->
+        <nav class="navbar">
+            <div class="nav-inner">
+                <div class="navbar-left">
+                    <a href="#wrapper">
+                        <!-- <img src="images/logo.png" class="logo" alt="Foo Logo" srcset=""> -->
+                        <h2 class="logo"></h2>
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <span class="md-hidden navbar-toggle text-white">
+                        <i class="fas fa-bars" id="toggle-icon"></i>
+                    </span>
+                    <div>
+                        <ul class="sm-hidden">
+                            <li>
+                                <a href="#wrapper" class="">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#menu" class="">
+                                    Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#shop" class="">
+                                    Shop
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="sm-hidden">
+                            <div class="search-cart">
+                                <span class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </span>
+                                <span class="cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="cart-count">2</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="md-hidden mobile-navbar">
+                        <li>
+                            <a href="#wrapper">
+                                <img src="images/logo.png" class="logo" alt="Foo Logo" srcset="">
+                                <span>Foo</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#wrapper" class="btn active">
+                                <i class="fa-solid fa-house"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="btn btn-portfolios">
+                                <i class="fa-solid fa-note-sticky"></i>
+                                Portfolios
+                                <span class="portfolio-count">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact-me" class="btn">
+                                <i class="fa-solid fa-user"></i>
+                                Contact Me
+                            </a>
+                        </li>
+                        <li>
+                            <input type="text" name="search" id="search-box" placeholder="Search">
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation Menu -->
+
+        <!-- Start Header Banner -->
+        <header>
+            <div class="header-banner container-padding">
+                <div class="header-info">
+                    <div class="header-text">
+                        <h2> <span class="fast">Fast</span>
+                            <span class="food-delivery">Food Delivery</span></h2>
+                        <p class="food-delivery-subtitle">
+                            Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium
+                        </p>
+                        <div class="header-button">
+                            <button class="order-now">Order Now</button>
+                            <span class="play-button">
+                                <a href="">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </span>
+                            <span class="watch-video">Watch Video</span>
+                        </div>
+                        <div class="header-rating">
+                            <span>
+                                <img src="images/emojione_star.png" alt="star" srcset="">
+                                <img src="images/emojione_star.png" alt="star" srcset="">
+                                <img src="images/emojione_star.png" alt="star" srcset="">
+                                <img src="images/emojione_star.png" alt="star" srcset="">
+                                <img src="images/emojione_star.png" alt="star" srcset="">
+                            </span>
+                            <p class="rating-text">5 star rating</p>
+                            <p class="rating-review">based on 1788 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="images/banner.png" alt="header-banner">
+                </div>
+            </div>
+        </header>
+        <!-- End Header Banner -->
+
+        <!-- Start Todays Trending -->
+        <section class="todays-trending container-padding">
+            <h3 class="section-title">Todays Trending Food</h3>
+            <h5 class="section-subtitle">Peoples loves it most the past week...</h5>
+            <div class="single-food">
+                <div class="food-image">
+                    <div>
+                        <img src="images/product.jpg" alt="food-image" class="food-img">
+                    </div>
+                    <div class="thumbnail-image">
+                        <img src="images/product.jpg" alt="food-image" class="thumbnail">
+                        <img src="images/product.jpg" alt="food-image" class="thumbnail">
+                        <img src="images/product.jpg" alt="food-image" class="thumbnail">
+                    </div>
+                </div>
+                <div class="food-info">
+                    <div>
+                        <h4>Basomoti Kacchi Biriyani</h4>
+                        <p>৳1,050</p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> 5.0 out of (1256) Reviews</span>
+                        </div>
+                    </div>
+                    <div class="quantity-text">
+                        <h5 class="quantity-title">Select Quantity</h5>
+                        <div class="checkbox__section">
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">0.5</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">1</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">2</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">5</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">10</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">20</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wishlist-cart">
+                        <span class="product-wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="product-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Todays Trending -->
+
+        <!-- Start Popular Items -->
+        <section class="popular-items container-padding">
+            <h2 class="section-title">Popular Items</h2>
+            <p>Most Ordered Items</p>
+            <div class="food-items">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cappucino</h3>
+                        <span>Served with lorem ipsum</span>
+                        <h4>
+                            ৳1200
+                        </h4>
+                    </div>
+                    <div class="item-amount">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="text-success">Add</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Bacon, Egg and Sandwich</h3>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
+                        <h4>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
+                        </h4>
+                    </div>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cappucino</h3>
+                        <span>Served with lorem ipsum</span>
+                        <h4>
+                            ৳1200
+                        </h4>
+                    </div>
+                    <div class="item-amount">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="text-success">Add</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Bacon, Egg and Sandwich</h3>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
+                        <h4>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
+                        </h4>
+                    </div>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cappucino</h3>
+                        <span>Served with lorem ipsum</span>
+                        <h4>
+                            ৳1200
+                        </h4>
+                    </div>
+                    <div class="item-amount">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="text-success">Add</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Bacon, Egg and Sandwich</h3>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
+                        <h4>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
+                        </h4>
+                    </div>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cappucino</h3>
+                        <span>Served with lorem ipsum</span>
+                        <h4>
+                            ৳1200
+                        </h4>
+                    </div>
+                    <div class="item-amount">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="text-success">Add</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Bacon, Egg and Sandwich</h3>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
+                        <h4>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
+                        </h4>
+                    </div>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Popular Items -->
+
+        <!-- Start Contact Us -->
+        <section class="contact-us container-padding">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="text-default">Need an experienced and skilled hand with custom IT projects?</p>
+            <p class="text-default lh-10"> Fill out the form to get a free consultation.</p>
+            <div class="contact-box">
+                <div class="contact-form">
+                    <form action="" method="post">
+                        <div class="form-group field">
+                            <input type="text" name="company_name" class="form__field" id="company_name"
+                                placeholder="Your Company Name">
+                            <label for="company_name" class="form__label">Your Company Name</label>
+                        </div>
+                        <div class="form-group field">
+                            <input type="text" name="business_nature" class="form__field" id="business-nature"
+                                placeholder="Nature of Business">
+                            <label for="business-nature" class="form__label">Name</label>
+                        </div>
+                        <div class="address-postcode">
+                            <div class="address form-group field">
+                                <input type="text" name="name" class="form__field" id="address" placeholder="Address">
+                                <label for="address" class="form__label">Address</label>
+                            </div>
+                            <div class="postcode form-group field">
+                                <input type="text" name="name" class="form__field" id="postcode"
+                                    placeholder="Post Code">
+                                <label for="postcode" class="form__label">Post Code</label>
+                            </div>
+                        </div>
+                        <div class="form-group field">
+                            <input type="text" name="name" class="form__field" id="name" placeholder="Contact Name">
+                            <label for="name" class="form__label">Contact Name</label>
+                        </div>
+                        <div class="form-group field">
+                            <input type="text" name="name" class="form__field" id="name" placeholder="Contact Phone">
+                            <label for="name" class="form__label">Contact Phone</label>
+                        </div>
+                        <div class="form-group field">
+                            <input type="email" name="email" class="form__field" id="email"
+                                placeholder="email@email.com">
+                            <label for="name" class="form__label">email@email.com</label>
+
+                            <span class="text-danger error-text">Please, enter valid email address</span>
+                        </div>
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">I want to protect my data by signing an NDA</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-outline">
+                                Send message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="office-location">
+                    <h4>Offices</h4>
+                    <p>
+                        United States <br>
+                        500 5th Avenue Suite 400, NY 10110
+                    </p>
+                    <p>
+                        United Kingdom <br>
+                        High St, Bromley BR1 1DN
+                    </p>
+                    <p>
+                        France <br>
+                        80 avenue des Terroirs de France, Paris
+                    </p>
+
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28914.807431860572!2d91.76905472831163!3d25.056092245852412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1647816759845!5m2!1sen!2sbd"
+                            width="420" height="380" style="border:0;" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Us -->
+
+        <!-- Start Footer -->
+        <footer class="footer">
+            <div class="top-footer">
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png" alt="footer-logo" srcset="">
+                </div>
+                <div class="footer-content">
+                    <div>
+                        <h4>Subscribe to our newsletter</h4>
+                        <div class="newsletter_field">
+                            <input type="email" placeholder="Email address" class="newsletter_input">
+                            <label for="email address" class="newsletter_label">Email address</label>
+                            <button class="newsletter_send"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Email Marketing</li>
+                            <li>Campaigns</li>
+                            <li>Branding</li>
+                            <li>Offline</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>About</h4>
+                        <ul>
+                            <li>Our Story</li>
+                            <li>Benefits</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Help</h4>
+                        <ul>
+                            <li>FAQs</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/Fahad24" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com/fahadchy24" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- End Wrapper -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
