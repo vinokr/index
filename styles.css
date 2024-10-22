@@ -8,7 +8,7 @@ html, body {
     height: 100%;
 }
 body {
-    background-image:url('E:/Vinokr-IT/full stack/download.jpg');
+    background-image:url();
     background-size: cover; /* or contain, depending on your preference */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position:center; /* centers the image */
