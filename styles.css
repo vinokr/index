@@ -8,7 +8,7 @@ html, body {
     height: 100%;
 }
 body {
-    background-image:url();
+    background-image:url('https://img.ex.co/image/upload/v1702834504/nlf1n8ahgot8th3o9ual.jpg');
     background-size: cover; /* or contain, depending on your preference */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position:center; /* centers the image */
