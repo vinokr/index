@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background-image:url('E:/Vinokr-IT/full stack/download.jpg');
+    background-size: cover; /* or contain, depending on your preference */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-position:center; /* centers the image */
+    height: 100vh; /* sets the height to the full viewport height */
+    margin: 0; /* removes default margin */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container .logo{
+   color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+header {
+    background-color: #728C00;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+.container {
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+}
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.3em; /* Font size for the main title */
+}
+
+.logo h1:last-child {
+    color:whitesmoke;
+    font-size: 1.4em; /* Smaller font size for the second title */
+    opacity: 0.8; /* Slightly transparent */
+}
+/* Experiment Cards Section */
+.experiments {
+    text-align:center;
+    padding: 40px 0;
+    color:rgb(0, 0, 0);
+}
+.container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center text */
+    margin:0 auto;
+}
+.experiments h2 {
+    transition: transform 0.3s;
+    color:whitesmoke;
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+.experiment-cards {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+}
+.card {
+    background-color:#FFE6E8 ; /* White background for cards */
+    border: 1px solid#728C00; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px #728C00; /* Subtle shadow */
+    padding: 15px; /* Padding inside the card */
+    margin: 10px 0; /* Margin between cards */
+    width:100%;
+    height: 100%; /* Fixed height for cards */
+    transition: transform 0.3s; /* Animation for hover effect */
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.card h3 {
+    font-size: 1.4em; /* Font size for experiment title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.card p a {
+    font-size:1.2em;
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+.card p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
