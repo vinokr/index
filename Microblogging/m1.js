@@ -21,7 +21,7 @@ loginForm.addEventListener('submit', (event)=>{
         document.getElementById('post-container').style.display = 'block';
         alert(`Login successfully!Welcome, ${username}!`);
     } else {
-        alert('Invalid username or password. Please try again.');
+        alert(`Invalid username or password. Please try again.`);
     }
 });
 postForm.addEventListener('submit', function(event) {
@@ -109,7 +109,7 @@ function dislikePost(index) {
 
 // Function to add a comment with likes and dislikes
 function addComment(index) {
-    const commentInput = document.getElementById(comment-input-${index});
+    const commentInput = document.getElementById('comment-input-${index}');
     const comment = commentInput.value;
     if (comment) {
         const newComment = {
