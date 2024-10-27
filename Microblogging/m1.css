@@ -1,0 +1,150 @@
+@keyframes gradientAnimation {
+    0% {
+        background-color: #ddf02f;
+    }
+    50% {
+        background-color: #feb47b;
+    }
+    100% {
+        background-color: #ff5f7e;
+    }
+}
+body {
+    background-image:url('https://121clicks.com/wp-content/uploads/2022/01/humans_and_animals_connection_andrea_martin_29.jpg') ;
+    background-size:cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Soft background color */
+}
+header {
+    background-color:crimson;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+input[type="text"], input[type="password"] {
+        width:200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid blueviolet;
+        box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    font-family: serif;
+}
+#login-container{
+    position: absolute;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:0 4px 30px ;
+    animation: gradientAnimation 1s ease infinite;
+    background: rgba(255, 255, 255, 0.8);
+    background-size: 400% 400%;
+}
+#login-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+textarea {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    margin-bottom: 10px;
+    padding: 10px; 
+    font-size: 16px; 
+    resize: vertical; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+textarea:hover {
+    border-color: #0056b3; 
+}
+
+textarea:focus {
+    outline: none; 
+    border-color: #0056b3; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+.post {
+    box-sizing: border-box;
+    background: #fff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: crimson;
+    font-family: serif;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+button.like {
+    background-color:#008000;
+    color: white;
+}
+
+button.dislike {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.like:hover {
+    background-color: #0af521;
+    transform: scale(1.05);
+}
+
+button.dislike:hover {
+    background-color: #ed4758;
+}
+
+button.comment:hover {
+    background-color: #f4f4f4;
+    color: #007bff;
+}
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+}
+
+.comment-input {
+    width: 80%;
+}
+
+ul {
+    padding-left: 20px;
+}
